@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"   
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- add your services here -->
+	<bean id="loginService" class="com.lq.personal.service.LoginService">
+	    <property name="loginDao" ref="loginDao"></property>
+	</bean>
+	<bean id="articleService" class="com.lq.personal.service.ArticleService">
+	    <property name="articleDao" ref="articleDao"></property>
+	</bean>
+</beans>
